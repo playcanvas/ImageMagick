@@ -49,6 +49,10 @@
   <!-- EPHEMERAL - temporary file access -->
   <policy domain="coder" rights="none" pattern="EPHEMERAL" />
   
+  <!-- LABEL/CAPTION - can be exploited for file reads -->
+  <policy domain="coder" rights="none" pattern="LABEL" />
+  <policy domain="coder" rights="none" pattern="CAPTION" />
+  
   <!-- HTTPS/HTTP - prevent SSRF attacks -->
   <policy domain="coder" rights="none" pattern="HTTPS" />
   <policy domain="coder" rights="none" pattern="HTTP" />
